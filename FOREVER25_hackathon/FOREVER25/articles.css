@@ -1,0 +1,130 @@
+body{
+    /* width: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px; */
+    padding-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 335;
+    box-sizing: border-box;
+    background: #ffff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    z-index: 100;
+    /* display: flex; */
+    /* text-align: center; */
+}
+.posse{
+    text-align: center;
+    margin: 34px;
+    background-color: #ffff;
+}
+
+header .logo {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.pl{
+    width: 150px;
+    height: 30px;
+}
+.logo{
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+.information{
+    padding-bottom: 72px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+body .list li{
+    border-bottom: #000 1px solid;
+}
+
+body .list li a{
+    display: block;
+    padding: 15px 0;
+}
+
+body .list li span{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.ft {
+    position: relative;
+    padding: 48px 0;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    margin: 0;
+}
+
+#page_top{
+    width: 65px;
+    height: 65px;
+    position: sticky;
+    bottom: 30px;
+    left: 95%;
+    bottom: 0;
+    background: #0271c0;
+    /* opacity: 0.9; */
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '⇪';
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 25%;
+    right: 0;
+    left: 5%;
+    margin: auto;
+    text-align: center;
+  }

@@ -1,0 +1,14 @@
+HTML
+<ul class="snsBox">
+                    <li>
+                        <a href="https://www.instagram.com/posse_programming/" target="blank">
+                            <img src="./instagram.png" alt="instagramicon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/posse_program?s=20" target="blank">
+                            <img src="./twitter.png" alt="twittericon">
+                        </a>
+                    </li>
+                </ul>
+CSS 

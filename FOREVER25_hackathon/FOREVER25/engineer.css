@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 335;
+    box-sizing: border-box;
+    background: white;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    /* display: flex; */
+    /* text-align: center; */
+}
+.posse{
+    text-align: center;
+    margin: 34px;
+}
+
+header .logo {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.pl{
+    width: 150px;
+    height: 30px;
+}
+/* header{
+    position: fixed;
+}
+
+.logo{
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    display: block;
+    margin: 0;
+} */
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding-top: 100px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding-top: 10px;
+    text-decoration: none;
+    text-decoration: underline white;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 40px;
+    padding-inline-start: 40px;
+}
+
+.top-banner{
+	display: flex;
+	flex-wrap:wrap;
+    list-style: none;
+}
+.top-banner li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding: 30px 10px 10px 10px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.top-banner li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+}
+
+.ft {
+    position: relative;
+    /* position: fixed; */
+    width: 100%;
+    padding: 48px 0;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    margin: 0;
+}
+
+#page_top{
+    width: 65px;
+    height: 65px;
+    position: sticky;
+    bottom: 30px;
+    left: 95%;
+    bottom: 0;
+    background: #0271c0;
+    /* opacity: 0.9; */
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '⇪';
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 25%;
+    right: 0;
+    left: 5%;
+    margin: auto;
+    text-align: center;
+  }

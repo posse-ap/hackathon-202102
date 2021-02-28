@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 335;
+    box-sizing: border-box;
+    background: white;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    /* display: flex; */
+    /* text-align: center; */
+}
+.posse{
+    text-align: center;
+    margin: 34px;
+}
+
+header .logo {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.pl{
+    width: 150px;
+    height: 30px;
+}
+
+.mainInner{
+    width: auto;
+    margin: 50px;
+    padding: 25px 20px 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+span{
+    font-size: 14px;
+}
+
+.contents{
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 2em;
+}
+
+.modoru{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    float: right;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+    overflow: hidden;
+}

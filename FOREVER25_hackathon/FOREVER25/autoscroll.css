@@ -1,0 +1,43 @@
+.swiper-container{
+    width: 71%;
+    background-color: transparent;
+    display: inline-block;
+    padding: 10% 0 0.2vh 0;
+}
+
+.swiper-slide img {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-left: 2%;
+}
+
+.swiper-slide div {
+    display: inline;
+}
+
+.swiper-slide a {
+    display: inline;
+}
+
+.swiper-slide p {
+    display: inline;
+} 
+
+.interviewimg {
+    width: 22%;
+    padding: 5% 0 0 0;
+    height: auto;
+}
+
+.interviewblock {
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gNav {
+    text-align: center;
+} 
