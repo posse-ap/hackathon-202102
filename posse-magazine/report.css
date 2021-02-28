@@ -1,0 +1,162 @@
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .breadcrumb li:first-child a:before {
+    /*家アイコン*/
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #2e7fea;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+  .eye-icon ::before{
+      padding-bottom: 0;
+  }
+
+  /*インタビュー記事の処理*/
+@media screen and (min-width:801px){
+    .report{
+        width:auto;
+        padding-right: 2%;
+        padding-left:3%;
+        /* flex-direction:column; */
+    }
+    .report-box{
+        display:flex;
+        width: 450px;
+    }
+    .report-inner{
+        display:block;
+        width: 100%;
+        height:auto;
+    }
+    .report-inner img{
+        width:100%;
+        height:220px;
+        object-fit:cover; 
+    }
+    .report-min-title{
+        height:144px;       
+        padding:0;
+        flex-grow: 1;
+    }
+    .view-flex{
+        justify-content:space-between;
+        display:flex;
+
+    }
+    h2{
+        
+    }
+    
+    }
+@media screen and (max-width: 800px) {
+    .report{
+        display:block;
+        width:auto;
+        padding-right: 2%;
+        padding-left:2%;
+    }
+    .report-box{
+        display: block;
+        width:auto;
+    }
+    .report-inner{
+        display:flex;
+        width: 100%;
+        height:auto;
+    }
+    .report-inner img{
+        width:150px;
+        height:100px;
+        object-fit: cover; 
+    }
+    .report-index{
+        height:100px;
+    }
+    .report-min-title{
+        height:auto;
+    }
+    h2{
+        font-size:13px;
+        margin:0;
+    }
+    .time{
+        font-size:1px;
+    }
+    }
+
+.report-box a{
+    text-decoration: none;
+    color:#000;
+}
+
+@media screen and (min-width:801px){
+.link-box-1{
+    display:flex;
+    padding-right:2%;
+}
+
+.link-box-2{
+    display:flex;
+    padding-right:2%;
+}
+
+.link-box-3{
+    display:flex;
+}
+}
+
+.view-flex{
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.time{
+    display:flex;
+}
+
+.viewer{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.report-box :hover{
+    opacity: 0.8; filter: brightness(100%); 
+}
+
+.report-box { -webkit-transition: all .3s; transition: all .3s;}

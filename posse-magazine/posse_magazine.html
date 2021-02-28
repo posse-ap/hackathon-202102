@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="posse_magazine.css">
+    <script src="https://kit.fontawesome.com/2c1be8c418.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://lopan.jp/css-animation">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
+    <script src="https://kit.fontawesome.com/2c1be8c418.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posse</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_in">
+
+                      <div class="logoimg">
+                          <img src="./posseLogo.png" height="30" alt="ロゴ">
+                    　</div>
+                     </div>
+                     <div class="magazine">
+                     MAGAZINE
+                     </div>
+               
+        
+                <a href="#interview-title" >
+                    <div class="interview">
+                        <p>Interview</p>
+                        <!-- <p>エンジニアインタビュー</p> -->
+                    </div>
+                </a>
+        
+                <a href="#report-title" >
+                    <div class="report">
+                        <p>Report</p>
+                        <!-- <p>講演会レポート</p> -->
+                    </div>
+                </a>
+                
+                    <div class="search">
+                          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+                          <form method="get" action="#" class="search_container">
+                            <input type="text" size="15" placeholder="キーワード検索">
+                            <input type="submit" value="&#xf002">
+                          </form>
+                        
+                    </div>
+
+                    <div class="hamburger-menu">
+                        <input type="checkbox" id="menu-btn-check">
+                        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                        <!--ここからメニュー-->
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="./interview.html">Interview - エンジニアインタビュー -</a>
+                </li>
+                <li>
+                    <a href="./report.html">Report - 講演会レポート -</a>
+                </li>
+                <li>
+                    <a href="https://posse.anti-pattern.co.jp/">POSSEを応援してくださる方へ</a>
+                </li>
+            </ul>
+        </div>
+        <!--ここまでメニュー-->
+                    </div>
+
+                    
+         </div>
+    </header>
+
+    <!-- スライダー -->
+    <div class="slideshow">
+        <input type="radio" name="slideshow" id="switch1" checked>
+        <input type="radio" name="slideshow" id="switch2">
+        <input type="radio" name="slideshow" id="switch3">
+        <input type="radio" name="slideshow" id="switch4">
+        <input type="radio" name="slideshow" id="switch5">
+        <div class="slideContents">
+            <section id="slide1">
+                <div class="figure1">
+                    <img src="magazine_background-min.jpg">
+                    <p>POSSE</br>Magazine</p>
+                </div>
+            </section>
+            <section id="slide2">
+                <div class="figure2">
+                    <img src="interview-1.jpg">
+                    <p>〇〇さんインタビュー</br>新着記事をupしました</p>
+                </div>
+            </section>
+            <section id="slide3">
+                <div class="figure3">
+                    <img src="interview-2.jpg">
+                    <p>〇〇さん講演会</br>新着記事をupしました</p>
+                </div>
+                
+            </section>
+           
+        </div>
+        <p class="arrow prev">
+            <i class="ico"></i>
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+        </p>
+        <p class="arrow next">
+            <i class="ico"></i>
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+        </p>
+    </div>
+​
+​
+    <!-- <div class="divider">
+      
+    </div> -->
+
+    <main>
+       
+        <section class="interview" >
+            <div class="interview-title">
+                <a name="interview-title">
+                    <h1>
+                       Interview
+                    </h1>
+                </a> 
+            </div>
+             <div class="interview-box" id="interview-box"></div>
+         </section>
+        
+        <section class="report">
+            <div class="report-title">
+                <a name="report-title">
+                    <h1>
+                        Report
+                    </h1>
+                </a>
+            </div>
+            <div class="report-box" id="report-box">
+            </div>
+        </section>
+        
+    </main>
+
+　　　<footer>
+        <div class="footer_title"><p class="footer_top">POSSE MAGAZINE</p></div>
+       <div class="footer_main">
+        <div class="footer_SNS">
+            <div>
+                <h4>POSSEってなに??</h4>
+            </div>
+            <div class="footer_Twitter">
+                <a href="https://twitter.com/posse_program" >Twitterはこちら</a>
+            </div>
+            <div　class="footer_Instagram">
+                <a href="https://www.instagram.com/posse_programming/">インスタグラムはこちら</a>
+            </div>
+        </div>
+        <div class="footer_about"> 
+            <p>
+                初版発行:2020.2.29
+            </p>
+
+             <p>
+               株式会社Anti-patern後援</br>
+               執筆：POSSEマーケティング局
+             </p>
+        </div>
+       </div>
+        
+
+      
+    </footer>
+
+<script src="posse_magazine.js"></script>    
+</body>
+</html>

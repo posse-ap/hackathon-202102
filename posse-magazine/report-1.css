@@ -1,0 +1,311 @@
+/* パンくず */
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #000;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .breadcrumb li:first-child a:before {
+    /*家アイコン*/
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #2e7fea;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+  /* ここから記事 */
+  body { line-height: 30px }
+
+/* 目次 */
+
+
+
+ul{
+    list-style: none;
+    margin-left:15%;
+    margin-right:15%;
+    padding:0;
+    /* border-top:1px solid;
+    border-right:1px solid;
+    border-left:1px solid;
+    display:inline-block; */
+    cursor:pointer;
+}
+ul h2{
+    font-size :100%;
+}
+
+.table-name{
+    border-bottom:1px solid;
+    font-weight: bold;
+}
+
+.tables:hover{
+  color: rgb(31,111,185);
+}
+
+
+
+a{
+    display: inline-block;
+    position: relative;
+    color: #555;
+    text-decoration: none;
+    
+    }
+  
+  a:hover:before{
+      transform: scale(1);
+    }
+  
+ 
+
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+/* 本文 */
+.article{
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:5%;
+}
+
+/* 関連記事 */
+
+.relation-title{
+    margin-left:15%;
+    margin-right:15%;
+}
+
+.relation{
+    margin-left:15%;
+    margin-right:15%;
+    display:flex;
+}
+
+/*インタビュー記事の処理*/
+@media screen and (min-width:801px){
+    .interview-inner img{
+        width:100%;
+        height:220px;
+        object-fit:cover; 
+    }
+    .interview{
+        width:auto;
+        padding-right: 2%;
+        padding-left:3%;
+        /* flex-direction:column; */
+    }
+    .interview-box{
+        display:flex;
+        width: 450px;
+    }
+    .interview-inner{
+        display:block;
+        width: 100%;
+        height:auto;
+        
+    }
+    
+    .interview-min-title{
+        height:auto;       
+        padding:0;
+        flex-grow: 1;
+    }
+    h2{
+        
+    }
+    }
+@media screen and (max-width: 800px) {
+    .relation-title{
+        margin-bottom: 3%;
+    }
+    .img-interview1{
+        text-align: center;
+        width:100%;
+        height:auto;
+        object-fit:cover; 
+    }
+    
+    .relation{
+        display:block;
+        width:auto;
+        padding-right: 2%;
+        padding-left:2%;
+    }
+    .interview-box{
+        display:block;
+        width:auto;
+    }
+    .interview-inner{
+        display:block;
+        width: 100%;
+        height:auto;
+    }
+    .interview-inner img{
+        width:100%;
+        height:auto;
+        object-fit: cover; 
+    }
+    .interview-index{
+        height:100px;
+        display:block;
+    }
+    .interview-min-title{
+        height:auto;
+    }
+    h2{
+        font-size:12px;
+        margin:0;
+    }
+    .time{
+        font-size:1px;
+    }
+    }
+
+.relation a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+
+
+@media screen and (min-width:801px){
+.link-box-1{
+    display:block;
+    padding-right:2%;
+}
+
+.link-box-2{
+    display:block;
+    padding-right:2%;
+}
+
+}
+
+.interview-box :hover{
+    opacity: 0.8; filter: brightness(100%); 
+}
+
+.interview-box { -webkit-transition: all .3s; transition: all .3s;}
+
+.sns_btn_ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.4em 0.2em;
+    border-radius: 0.3em;
+    position: relative;
+}
+
+@media screen and (min-width:801px){
+.sns_btn_li-twitter{
+    background-color:#2BA1F2;
+    color:#fff;
+    margin-right: 3%;
+    padding: 0.4em;
+}
+.sns_btn_li-twitter a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.sns_btn_li-facebook{
+    background-color:#296FE5;
+    color:#fff;
+    margin-right: 3%;
+    padding: 0.4em;
+}
+
+.sns_btn_li-facebook a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.sns_btn_li-line{
+    background-color: #03B302;
+    padding: 0.4em;
+}
+
+.sns_btn_li-line a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.btn-font{
+    font-size:20px;
+}
+}
+@media screen and (max-width:800px){
+.sns_btn_li-twitter{
+    background-color:#2BA1F2;
+    color:#fff;
+    margin-right: 3%;
+    padding: 0.4em;
+}
+.sns_btn_li-twitter a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.sns_btn_li-facebook{
+    background-color:#296FE5;
+    color:#fff;
+    margin-right: 3%;
+    padding: 0.4em;
+}
+
+.sns_btn_li-facebook a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.sns_btn_li-line{
+    background-color: #03B302;
+    padding: 0.4em;
+}
+
+.sns_btn_li-line a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.btn-font{
+    font-size:10px;
+    display:flex;
+}
+.icon{
+    text-align:center;
+}
+}
