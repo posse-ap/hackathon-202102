@@ -1,0 +1,281 @@
+
+body{
+  color: #3a3a3a;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+}
+/*-------------- header---------------------- */
+.header-img{
+  width: 180px;
+}
+.nav-link{
+  color: #3a3a3a !important;
+}
+.nav-link:hover{
+    opacity: 0.6 ;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+/* ----------------スライド ----------*/
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* height: 70%; */
+    margin-top: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 60%;
+    height: 300px;
+  }
+
+/* 記事------------------------- */
+.popular-topics{
+  margin-bottom: 60px;
+
+}
+.popular-topics > h2 {
+  font-size: 24px;
+}
+.popular-topics > h2  span{
+  font-size: 13px;
+}
+.popular-topic > a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+    border:none;
+}
+.topic-title > a{
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.topic-title > a:hover{
+  color: #ff00f7;
+  /* opacity: 0.6; */
+  transition: 0.2s;
+}
+.topic-others > a{
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.topic-others > a:hover{
+  color: #ff00f7;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+  .popular-topic-box{
+    border-top: 1px solid #ddd;
+
+  } 
+  
+  .popular-topic{
+    margin: 17px 0;
+    display: flex;
+  } 
+  .popular-topic img{
+    width: 210px;
+    height: auto;
+  }
+  .topic-text{
+    margin: 0 15px;
+  }
+  .topic-title{
+    font-size: 17px;
+  }
+  .topic-others{
+    font-size: 13px;
+  }
+
+
+  /*------------------ もっと読む -----------------*/
+  .cp_box *, .cp_box *:before, .cp_box *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .cp_box {
+    position: relative;
+  }
+  .cp_box label {
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    width: 100%;
+    height: 180px; /* グラデーションの高さ */
+    cursor: pointer;
+    text-align: center;
+    /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+    background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+  }
+  .cp_box input:checked + label {
+    background: inherit; /* 開いた時にグラデーションを消す */
+  }
+  .cp_box label:after {
+    line-height: 2.5rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 50%;
+    width: 16rem;
+    font-family: FontAwesome;
+    content: '\f13a'' Read More';
+    transform: translate(-50%, 0);
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: rgba(27, 37, 56, 1);
+  }
+  .cp_box input {
+    display: none;
+  }
+  .cp_box .cp_container {
+    overflow: hidden;
+    height: 250px; /* 開く前に見えている部分の高さ */
+    transition: all 0.5s;
+  }
+  .cp_box input:checked + label {
+    /* display: none ; 閉じるボタンを消す場合解放 */
+  }
+  .cp_box input:checked + label:after {
+    font-family: FontAwesome;
+    content: '\f139'' 閉じる';
+  }
+  .cp_box input:checked ~ .cp_container {
+    height: auto;
+    padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+    transition: all 0.5s;
+  }
+
+
+
+
+
+
+  /* footer */
+  footer{
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  .footer-contents{
+    margin: 0 20px;
+    margin-top: 20px; 
+  }
+  footer h4{
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .sns ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px auto;
+    
+  }
+  .sns ul li a img{
+    width: 40px;
+  }
+  .sns ul li{
+    padding: 10px;
+  }
+  .sns ul li a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  .footer-others li{
+    list-style: none;
+    margin: 20px auto;
+  }
+  .footer-others a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .footer-others a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+  }
+
+
+
+
+
+
+
+  /* レスポンシブ対応 */
+  /* /* // 画面サイズが576px以上に適用 */
+@media(min-width: 776px) {
+  
+    .inner{
+      /* width: 90%; */
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .popular-topics > h2 {
+      font-size: 32px;
+    }
+    .popular-topics > h2  span{
+      font-size: 14px;
+    }
+
+    .popular-topic img{
+      width: 270px;
+      height: auto;
+    }
+    .topic-title{
+      font-size: 20px;
+    }
+    .topic-others{
+      font-size: 16px;
+    }
+
+        
+ 
+}
+
+/* // 画面サイズが992px以上に適用 */
+@media (min-width: 992px){
+
+
+  .inner{
+    /* width: 90%; */
+    max-width: 970px;
+    margin: 0 auto;
+  }
+  .popular-topics > h2 {
+    font-size: 38px;
+  }
+  .popular-topics > h2  span{
+    font-size: 18px;
+  }
+
+  .popular-topic img{
+    width: 300px;
+    height: auto;
+  }
+  .topic-title{
+    font-size: 22px;
+  }
+  .topic-others{
+    font-size: 18px;
+  }
+      
+  .swiper-container {
+    margin-top: 70px;
+  }
+
+}

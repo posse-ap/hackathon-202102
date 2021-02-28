@@ -1,0 +1,325 @@
+
+
+/*-------------- header---------------------- */
+.header-img{
+    width: 180px;
+  }
+  .nav-link{
+    color: #3a3a3a !important;
+  }
+  .nav-link:hover{
+      opacity: 0.6 ;
+      transition: 0.4s;
+      border-bottom: 1px solid black;
+      cursor: pointer;
+  }
+
+
+
+
+  /* footer */
+  footer{
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  .footer-contents{
+    margin: 0 20px;
+    margin-top: 20px; 
+  }
+  footer h4{
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .sns ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px auto;
+    
+  }
+  .sns ul li a img{
+    width: 40px;
+  }
+  .sns ul li{
+    padding: 10px;
+  }
+  .sns ul li a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  .footer-others li{
+    list-style: none;
+    margin: 20px auto;
+  }
+  .footer-others a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .footer-others a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+  }
+
+
+
+
+
+
+
+  .main > h1{
+      margin-top: 40px;
+
+  }
+
+
+
+.title{
+    border-left: 4px solid #74e8db;
+    padding: 5px 0 5px 10px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+  
+}
+body{
+    margin:0px;
+    width: 100%;
+}
+.setumei{
+    border-left: 4px solid #DDDDDD;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.photo{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+}
+.photo2{
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom:40px; 
+}
+.longer{
+    word-break: break-all;
+}
+.under{
+    text-decoration: underline;
+    color: black;
+}
+.color{
+    background-color:white;
+}
+.digest-space{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    line-height: 1.4;
+    border: 2px solid #3d3d3d;
+    border-radius: 3px;
+    
+}
+.digest{
+    margin-bottom: 5px;
+    margin-top:0px;
+    padding: 4px 0 4px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color:black;
+    color: #fff;
+}
+.header{
+    max-width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    opacity: 0.7;
+    background: url(https://t4.ftcdn.net/jpg/03/83/18/63/240_F_383186366_Su27zFW37tSfMcLG6xN1K9QeQ4VsvTnE.jpg) no-repeat;
+    background-size: cover;
+}
+.header-text{
+    margin: 5px 0 12px;
+    font-size: 32px;
+    line-height: 1.3;
+    color:black;
+    margin-top: 80px;
+}
+.intoroduce-block{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: verdana;
+    line-height: 1.7;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    clear: both;
+}
+.a{
+    color: black;
+}
+.heart {
+    display: inline-block;
+    color: #333;/*線の色*/
+    position: relative;
+    margin-top: 6px;/*要調整*/
+    margin-left: 5px;/*要調整*/
+    width: 9px;
+    height: 9px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    transform: rotate(-45deg) scale(1);/*scale要調整*/
+    background: white;/*背景色*/
+}
+.heart:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    width: 8px;
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    background: white;/*背景色*/
+}
+.heart:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 5px;
+    height: 8px;
+    border-radius: 0 5px 5px 0;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    background: white;/*背景色*/
+}
+
+ .heart2 {
+    display: inline-block;
+    color: #333;/*線の色*/
+    position: relative;
+    margin-top: 6px;/*要調整*/
+    margin-left: 5px;/*要調整*/
+    width: 9px;
+    height: 9px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    transform: rotate(-45deg) scale(1);/*scale要調整*/
+    background: red;/*背景色*/
+    pointer-events: none;
+}
+.heart2:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    width: 8px;
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    background: red;/*背景色*/
+    pointer-events: none;
+}
+.heart2:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 5px;
+    height: 8px;
+    border-radius: 0 5px 5px 0;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    background: red;/*背景色*/
+    pointer-events: none;
+}
+ /* footer */
+ footer{
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  .footer-contents{
+    margin: 0 20px;
+    margin-top: 20px; 
+  }
+  footer h4{
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .sns ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px auto;
+    
+  }
+  .sns ul li a img{
+    width: 40px;
+  }
+  .sns ul li{
+    padding: 10px;
+  }
+  .sns ul li a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  .footer-others li{
+    list-style: none;
+    margin: 20px auto;
+  }
+  .footer-others a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .footer-others a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+  }
+  .sample3{
+    width:400px;
+    height:200px;
+    
+}
+.button2{
+    width:80px;
+    height:35px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    margin-top: auto;
+}

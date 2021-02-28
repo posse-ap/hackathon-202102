@@ -1,0 +1,528 @@
+
+
+/*-------------- header---------------------- */
+.header-img{
+    width: 180px;
+  }
+  .nav-link{
+    color: #3a3a3a !important;
+  }
+  .nav-link:hover{
+      opacity: 0.6 ;
+      transition: 0.4s;
+      border-bottom: 1px solid black;
+      cursor: pointer;
+  }
+
+
+
+
+  /* footer */
+  footer{
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  .footer-contents{
+    margin: 0 20px;
+    margin-top: 20px; 
+  }
+  footer h4{
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .sns ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px auto;
+    
+  }
+  .sns ul li a img{
+    width: 40px;
+  }
+  .sns ul li{
+    padding: 10px;
+  }
+  .sns ul li a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  .footer-others li{
+    list-style: none;
+    margin: 20px auto;
+  }
+  .footer-others a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .footer-others a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+  }
+
+
+
+
+
+
+@media(max-width: 900px){
+.interview {
+    margin: 5% 5%;
+    
+
+}
+
+
+.interview_1 img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.interview_1  {
+color: #000000;
+background-color: #99ffff;
+
+	
+	left: 0;
+	width: 100%;
+	height: 250px;
+    margin: 0;
+    border-radius: 20px;
+    margin-bottom: 40px;
+
+}
+
+.report  {
+    color: #000000;
+    background-color: #9f9;
+    
+        
+        left: 0;
+        width: 100%;
+        height: 250px;
+        margin: 0;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    
+    }
+
+.title2 {
+        font-weight: bold;
+        border-left: solid lime;
+        
+    }
+    
+.title1 {
+ font-weight: bold;
+ border-left:solid blue ;
+}
+
+
+.interview a {
+   text-decoration: none;
+}
+
+.interview_1:hover {
+    opacity: 0.7;
+}
+
+.interview_1 h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.heart_container {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 45px;
+}
+
+.heart_container p {
+ margin: 0 5px;
+ color: tomato;
+}
+.heart2 {
+   display: inline-block;
+   color: #333;/*線の色*/
+   position: relative;
+   margin-top: 6px;/*要調整*/
+   margin-left: 5px;/*要調整*/
+   width: 9px;
+   height: 9px;
+   border-left: solid 1px currentColor;
+   border-bottom: solid 1px currentColor;
+   transform: rotate(-45deg) scale(1);/*scale要調整*/
+   background:red;/*背景色*/
+}
+.heart2:before {
+   content: '';
+   position: absolute;
+   top: -5px;
+   left: -1px;
+   width: 8px;
+   height: 5px;
+   border-radius: 5px 5px 0 0;
+   border-top: solid 1px currentColor;
+   border-left: solid 1px currentColor;
+   border-right: solid 1px currentColor;
+   background: red;/*背景色*/
+}
+.heart2:after {
+   content: '';
+   position: absolute;
+   top: 0px;
+   left: 8px;
+   width: 5px;
+   height: 8px;
+   border-radius: 0 5px 5px 0;
+   border-top: solid 1px currentColor;
+   border-right: solid 1px currentColor;
+   border-bottom: solid 1px currentColor;
+   background: red;/*背景色*/
+}
+
+.viewmore1 {
+    height: 50px;
+    width: 200px;
+    margin: 30px auto  ;
+    text-align: center;
+    margin-left: 20% ;
+    background-color: #99ffff;
+    border-radius: 10px;
+} 
+
+.viewmore2 {
+    height: 50px;
+    width: 200px;
+    margin: 30px auto  ;
+    text-align: center;
+    margin-left: 20% ;
+    background-color:#9f9;
+    border-radius: 10px; 
+}
+
+.viewmore2:hover{
+    opacity: 0.7;
+}
+
+.viewmore1:hover{
+    opacity: 0.7;
+}
+
+.hidden {
+    display: none;
+}
+
+.view {
+    display: block;
+}
+ 
+.fight_container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.title3 {
+ 
+ font-weight: bold;
+ border-left: solid #99fff9;
+ margin-left: 15%;
+ font-size: 20px;
+}
+
+.posse_explain {
+    
+    margin: 10% 10%;
+}
+
+.face_image {
+    width: 250px;
+    border-radius: 50%;
+    
+    height: 150px;
+}
+
+.texttext {
+    background-color: #99fff9;
+    margin-top: 20px;
+    border-radius: 30px;
+    
+}
+.texttext h2 {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.back_image2 {
+    width: 300px;
+    border-radius: 50%;
+ margin-left: 15%;
+ 
+ display: none;
+ 
+}
+
+.official {
+    text-align: center;
+}
+
+
+.back_image1{
+    width: 250px;
+    border-radius: 50%;
+ 
+ height: 150px;
+ 
+}
+
+
+.official h2 {
+    font-size: 15px;
+}
+
+
+
+
+
+}
+
+
+@media(min-width: 900px) {
+
+    .interview_1  {
+        color: #000000;
+        background-color: #99ffff;
+        display: block;
+            
+            left: 0;
+            width: 275px;
+            height: 250px;
+            margin: 0;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        
+            
+        }
+
+     .report{
+        color: #000000;
+        background-color: #9f9;
+        display: block;
+            
+            left: 0;
+            width: 275px;
+            height: 250px;
+            margin: 0;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        
+
+     }
+     .interview_1 img {
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+        }
+
+    .interview {
+         margin: 5% 5%;
+             }
+
+    .interview_container {
+        margin: 30px 5%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .interview_container a{
+        
+        text-decoration: none !important; 
+    }
+    .interview_1:hover{
+        opacity: 0.7;
+    }
+        
+    .interview_1 h2{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    
+    .interview a {
+        text-decoration: none;
+
+     }
+     
+    .title1 {
+        font-weight: bold;
+        border-left: solid blue;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    　.title2 {
+       font-size: 10px;
+        font-weight: bold;
+        border-left:solid lime ;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    h1.title2{
+        margin-left: 5%;
+        border-left:solid lime ;
+        margin-bottom: 5%;
+    
+
+}
+            
+
+     .heart_container {
+         display: flex;
+         margin-left: 5%;
+     }
+     
+     .heart_container p {
+      margin: 0 5px;
+      color: tomato;
+     }
+     .heart2 {
+        display: inline-block;
+        color: #333;/*線の色*/
+        position: relative;
+        margin-top: 6px;/*要調整*/
+        margin-left: 5px;/*要調整*/
+        width: 9px;
+        height: 9px;
+        border-left: solid 1px currentColor;
+        border-bottom: solid 1px currentColor;
+        transform: rotate(-45deg) scale(1);/*scale要調整*/
+        background:red;/*背景色*/
+    }
+    .heart2:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -1px;
+        width: 8px;
+        height: 5px;
+        border-radius: 5px 5px 0 0;
+        border-top: solid 1px currentColor;
+        border-left: solid 1px currentColor;
+        border-right: solid 1px currentColor;
+        background: red;/*背景色*/
+    }
+    .heart2:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 8px;
+        width: 5px;
+        height: 8px;
+        border-radius: 0 5px 5px 0;
+        border-top: solid 1px currentColor;
+        border-right: solid 1px currentColor;
+        border-bottom: solid 1px currentColor;
+        background: red;/*背景色*/
+
+    
+    }
+
+    .viewmore1 {
+        height: 50px;
+        width: 200px;
+        margin: 30px 0  ;
+        text-align: center;
+        margin-left: 41%;
+        background-color: #99ffff;
+        border-radius: 10px;
+    } 
+
+    .viewmore1:hover{
+        opacity: 0.7;
+    }
+    .viewmore2 {
+        height: 50px;
+        width: 200px;
+        margin: 30px 0  ;
+        text-align: center;
+        margin-left: 41% ;
+        background-color: #9f9;
+        border-radius: 10px; 
+    }
+    
+    .viewmore2:hover{
+        opacity: 0.7;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .view {
+        display: block;
+    }
+     
+    .fight_container {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    .title3 {
+     
+     font-weight: bold;
+     border-left: solid #99fff9;
+     margin-left: 35%;
+     font-size: 30px;
+    }
+    
+    .posse_explain {
+        display: flex;
+        margin: 10% 10%;
+    }
+    
+    .face_image {
+        width: 300px;
+        border-radius: 50%;
+        margin-right: 15%;
+        display: block
+    }
+    
+    .texttext {
+        background-color: #99fff9;
+        margin-top: 20px;
+        border-radius: 30px;
+        
+    }
+    
+    .back_image2 {
+        width: 300px;
+        border-radius: 50%;
+     margin-left: 15%;
+     display: block;
+     
+    }
+    
+    .official {
+        text-align: center;
+    }
+    
+
+   .back_image1{
+       display: none;
+   }
+
+    }   
+
+     
