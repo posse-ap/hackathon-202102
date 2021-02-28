@@ -1,0 +1,580 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ヘッダー */
+header{
+    box-sizing: border-box;
+    border: 5px;
+    margin: 0;
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
+header p{
+    width: 100%;
+    box-sizing: inherit;
+    padding-top:2vw;
+    background-color: #fdf8ef;
+}
+
+header ul{
+    display:inline;
+    box-sizing: inherit;
+    width:100%;
+    position: absolute;
+    display: table;
+    margin:0;
+    padding: 0;
+}
+
+header nav{
+    background-color: #fdf8ef;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top:2vw;
+    border-bottom: 5px solid #185085;
+    position: relative;
+}
+
+header img{
+    display: block;
+    width: 10%;
+    margin: auto;
+    background: transparent;
+}
+
+header nav ul a{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333333;
+    background-color:transparent;
+    align-self: center;
+    border-right: 3px solid #185085;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.headerrightli{
+    border-right: none;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+nav ul a.current{
+    font-weight: bold;
+    border-top: 5px solid #1072bc;
+    }
+
+nav ul a.current i{
+    color: #105085;
+    font-weight: bold;
+}
+nav ul a.current li{
+    color: #105085;
+    font-weight: bold;
+}
+
+nav ul a:hover, nav ul li a:hover{
+    color: #fdf8ef;
+    font-size: 16px;
+    background-color:#1072bc;
+}
+
+.lecturebutton{
+    color: #fdf8ef;
+    font-size: 16px;
+    background-color:#105085;
+}
+
+/* ヘッダ終わり */
+
+/* 背景画像 */
+html{
+    width: 100vw;
+    box-sizing: border-box;
+    color: #333333;
+    background-image:url(https://as1.ftcdn.net/jpg/03/00/75/57/240_F_300755714_ClwmQaJli8Apocerh1bLbgQYC09LuKcw.jpg);
+   background-size: cover;
+}
+
+/* PC用 */
+@media screen and (min-width:481px){
+   
+.profile{
+    display: flex;
+    margin: 20px 80px;
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.profile_img{
+    width: 30%;
+    box-sizing: border-box;
+    position: relative;
+}
+.profile_img::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.profile img{
+    width:100%;
+    height :100%;
+    position: absolute;
+    top:0;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+.profile_sentence{
+    width: 70%;
+    box-sizing: border-box;
+    min-width: 0;
+    padding-left: 10px;
+
+}
+h3{
+    width: 100%;
+    box-sizing: border-box;
+}
+.contents{
+    margin:10px 80px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+}
+
+.impressions_img{
+    /* display:flex; */
+    width:10%;
+    margin:10px 0;
+}
+.impressions_img img{
+    /* width:10%; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chatting{
+    width: 100%;
+}
+.says{
+    display: inline-block;
+    position: relative;
+    margin:20px 0 20px 40px;
+    padding:17px 13px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+.says::after{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top:18px;
+    left:-24px;
+    border:12px solid transparent;
+    border-right: 12px solid whitesmoke;
+}
+.says p{
+    margin:0;
+    padding:0;
+}
+.impressions{
+    display: flex;
+    margin: 10px 80px;
+}
+
+h4{
+    margin: 20px 80px;  
+}
+.contents_title{
+    margin: 10px 80px;
+}
+.heading h2{
+    text-align: center;
+}
+.pagetop_button{
+    display: inline-block;
+    border-radius: 100%;
+    width:100px;
+    height: 100px;
+    background-color: rgb(49, 183, 228);
+    text-decoration: none;
+    transition-property: opacity;
+    -webkit-transition-property:opacity ;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin:30px;
+    border-color: rgba(245, 227, 125, 0.836);
+ 
+}
+.pagetop_button:hover{
+    opacity: .7;
+}
+.pagetop_text{
+    box-sizing: border-box;
+    text-align: center;
+    writing-mode: horizontal-tb;
+    display: inline-block;
+    margin: 0;
+    /* text-align: center; */
+    
+}
+}
+
+/*footerについて */
+/* 応援してくださる方へ */
+.supportPosseSection{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0 60px 0;
+    align-items: center;
+    background-color: #185085;
+    border-top: 3px #fdf8ef;
+}
+
+.supportersTitle{
+    display: flex;
+    margin:0;
+    color: #fdf8ef;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+.supportersTitle::before, .supportersTitle::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #fdf8ef;
+}
+
+.supportersTitle::before{
+    margin-right: 20px;
+}
+
+.supportersTitle::after{
+    margin-left: 20px;
+}
+
+.supportPosseId{
+    /* display: inline; */
+}
+
+.supportersP{
+    margin: 2% 5% 4% 5%;
+    color: #fdf8ef;
+    text-align: center;
+    line-height: 200%;
+}
+
+.posselink{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: max-content;
+    margin: 0 39%;
+    position: relative;
+    padding: 1rem 2rem calc(1rem + 10px);
+    background: #fff100;
+}
+.posselink a{
+    margin: 0;
+    color: #333333;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.posselink::before{
+    position: absolute;
+    /* display: inline; */
+    top: 5px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    content:'';
+    border: 4px solid  #e7e7e7;
+}
+.pagetop_button{
+    display: inline-block;
+    border-radius: 100%;
+    width:100px;
+    height: 100px;
+    background-color: rgb(49, 183, 228);
+    text-decoration: none;
+    transition-property: opacity;
+    -webkit-transition-property:opacity ;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin:30px;
+    border-color: rgba(245, 227, 125, 0.836);
+ 
+}
+.pagetop_button:hover{
+    opacity: .7;
+}
+.pagetop_text{
+    box-sizing: border-box;
+    text-align: center;
+    writing-mode: horizontal-tb;
+    display: inline-block;
+    margin: 0;
+    /* text-align: center; */
+    
+}
+
+/*普通のfooterについて */
+footer{
+    align-self: center;
+    background-color: #fdf8ef;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer a{
+    margin:20px;
+}
+
+.footerSection{
+    display: inline;
+    align-self: center;
+}
+
+.footerposseicon{
+    display: inline;
+    height: auto;
+    width: 10%;
+    align-self: center;
+    margin: auto;
+}
+
+.footerposseicon a{
+    display: inline-block;
+}
+
+footer img{
+    width:10%;
+    display: inline;
+    align-self: center;
+}
+
+.fab fa-twitter{
+    margin:auto;
+    border: none;
+}
+
+
+/* スマホ用 */
+@media screen and (max-width:480px){
+    .profile{
+        display: flex;
+        margin: 20px 10px;
+        padding:10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .profile_img{
+        width: 30%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .profile_img::before{
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    .profile img{
+        width:100%;
+        height :100%;
+        position: absolute;
+        top:0;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    img{
+        width:100%;
+    }
+    .profile_sentence{
+        width: 70%;
+        box-sizing: border-box;
+        min-width: 0;
+        padding-left: 10px;
+    }  
+    .contents{
+        margin:10px 10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 3px 10px 3px 10px;
+    }  
+    .contents_title{
+        margin: 10px 10px;
+    }
+    .impressions_img{
+        /* display:flex; */
+        width:10%;
+        margin:10px 0;
+    }
+    .impressions_img img{
+        /* width:10%; */
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    h4{
+        margin: 20px 10px;  
+    }
+    .impressions_img{
+        /* display:flex; */
+        width:10%;
+        margin:20px 0;
+    }
+    .impressions_img img{
+        /* width:10%; */
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .chatting{
+        width: 100%;
+    }
+    .says{
+        display: inline-block;
+        position: relative;
+        margin:20px 0 20px 20px;
+        padding:17px 13px;
+        border-radius: 12px;
+        background-color: whitesmoke;
+    }
+    .says::after{
+        content:"";
+        display: inline-block;
+        position: absolute;
+        top:18px;
+        left:-24px;
+        border:12px solid transparent;
+        border-right: 12px solid whitesmoke;
+    }
+    .impressions{
+        display: flex;
+        margin: 10px 10px;
+    }
+    .heading h2{
+        text-align: center;
+    }
+    .pagetop_button{
+        border-radius: 100%;
+        width:50px;
+        height: 50px;
+        background-color: rgb(49, 183, 228);
+        text-decoration: none;
+        transition-property: opacity;
+        -webkit-transition-property:opacity ;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+        text-align: center;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin:20px;
+        border-color: rgba(245, 227, 125, 0.836);
+     
+    }
+    .pagetop_button:hover{
+        opacity: .7;
+    }
+    .pagetop_text{
+        box-sizing: border-box;
+        width: 60%;
+        text-align: center;
+        writing-mode: horizontal-tb;
+        font-size: 10px;
+    }

@@ -1,0 +1,592 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+header{
+    box-sizing: border-box;
+    border: 5px;
+    margin: 0;
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
+header p{
+    width: 100%;
+    box-sizing: inherit;
+    padding-top:2vw;
+    margin:0;
+    background-color: #fdf8ef;
+}
+
+header ul{
+    display:inline;
+    box-sizing: inherit;
+    width:100%;
+    position: absolute;
+    display: table;
+    margin:0;
+    padding: 0;
+}
+
+header nav{
+    background-color: #fdf8ef;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top:2vw;
+    border-bottom: 5px solid #185085;
+    position: relative;
+}
+
+header img{
+    display: block;
+    width: 10%;
+    margin: auto;
+    background: transparent;
+}
+
+nav ul a{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+    color: #fdf8ef;
+    background-color:transparent;
+    align-self: center;
+    border-right: 3px solid #185085;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.headerrightli{
+    border-right: none;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+nav ul a.current{
+    font-weight: bold;
+    border-top: 5px solid #1072bc;
+    }
+
+nav ul a.current i{
+    color: #105085;
+    font-weight: bold;
+}
+nav ul a.current li{
+    color: #105085;
+    font-weight: bold;
+}
+
+nav ul a:hover, nav ul li a:hover{
+    color: #fdf8ef;
+    font-size: 16px;
+    background-color:#1072bc;
+}
+
+.topbutton{
+    color: #fdf8ef;
+    font-size: 16px;
+    background-color:#105085;
+}
+
+
+html{
+    color: #333333;
+    background-image:url(https://as1.ftcdn.net/jpg/03/00/75/57/240_F_300755714_ClwmQaJli8Apocerh1bLbgQYC09LuKcw.jpg);
+   background-size: cover;
+}
+/* ////////////////////////////////////////// */
+
+h2{
+    font-family: 'Anton', sans-serif;
+}
+
+main a{
+    border-radius: 10%;
+    /* background: white; */
+}
+.supportPosseSection{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0 60px 0;
+    align-items: center;
+    background-color: #185085;
+    border-top: 10px #fdf8ef;
+}
+
+.supportersTitle{
+    display: flex;
+    margin:0;
+    color: #fdf8ef;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+.supportersTitle::before, .supportersTitle::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #fdf8ef;
+}
+
+.supportersTitle::before{
+    margin-right: 20px;
+}
+
+.supportersTitle::after{
+    margin-left: 20px;
+}
+
+.supportPosseId{
+    /* display: inline; */
+}
+
+.supportersP{
+    margin: 2% 5% 4% 5%;
+    color: #fdf8ef;
+    text-align: center;
+    line-height: 200%;
+}
+
+.posselink{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: max-content;
+    margin: 0 39%;
+    position: relative;
+    padding: 1rem 2rem calc(1rem + 10px);
+    background: #fff100;
+}
+.posselink a{
+    margin: 0;
+    color: #333333;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.posselink::before{
+    position: absolute;
+    /* display: inline; */
+    top: 5px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    content:'';
+    border: 4px solid  #e7e7e7;
+}
+.pagetop_button{
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width:100px;
+    height: 100px;
+    background-color: rgb(49, 183, 228);
+    text-decoration: none;
+    transition-property: opacity;
+    -webkit-transition-property:opacity ;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin:30px;
+    border-color: rgba(245, 227, 125, 0.836);
+ 
+}
+.pagetop_button:hover{
+    opacity: .7;
+}
+.pagetop_text{
+    box-sizing: border-box;
+    text-align: center;
+    writing-mode: horizontal-tb;
+    display: inline-block;
+    margin: 0;
+    /* text-align: center; */
+    
+}
+
+/*普通のfooterについて */
+footer{
+    align-self: center;
+    background-color: #fdf8ef;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer a{
+    margin:20px;
+}
+
+.footerSection{
+    display: inline;
+    align-self: center;
+}
+
+.footerposseicon{
+    display: inline;
+    height: auto;
+    width: 10%;
+    align-self: center;
+    margin: auto;
+}
+
+.footerposseicon a{
+    display: inline-block;
+}
+
+footer img{
+    width:10%;
+    display: inline;
+    align-self: center;
+}
+
+.fab fa-twitter{
+    margin:auto;
+    border: none;
+}
+/* footer */
+
+img{
+    object-fit: fill;
+border-radius: 10%;
+}
+
+body{
+    /* background: cadetblue; */
+}
+
+.interview_box{
+    /* background-color: cadetblue; */
+    width: 900px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_interview{
+    display: flex;
+    width: 100%;
+}
+
+.interview_detail_box{
+    height: 350px;
+    border-radius: 30px;
+    background: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .interview_detail_box img{
+    width: 100%;
+}  */
+
+.interview_detail{
+    /* margin-left: auto;
+    margin-right: auto; */
+    background: white;
+    margin: 0 5% 0 10%;
+    background-color: cadetblue;
+    width: 50%;
+    color: #000;
+    text-decoration: none;
+}
+
+.interview_detail_2{
+    margin: 0 10% 0 5%;
+    background-color: cadetblue;
+    width: 50%;
+    color: #000;
+    text-decoration: none;
+}
+
+.interview_detail_2 img{
+    width: 100%;
+}
+
+h2{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+p{
+    margin-left: 4px;
+    margin-top: 10px;
+    font-size: smaller;
+}
+
+.interview_detail_box img{
+width: 100%;
+}
+
+/* .interview_detail img{
+    width: 300px;
+} */
+
+.normal_interview_container
+{
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+}
+
+.normal_interview_container img{
+    width: 100%;
+}
+
+.normal_interview_box_1{
+    /* width: 33.3333%; */
+    height: 270px;
+    margin: 5% 5% 5% 10%;
+    background: white;
+    color: #000;
+    text-decoration: none;
+}
+.normal_interview_box_2{
+    background: white;
+    height: 270px;
+    margin: 5% 5% 5% 5% ;
+    color: #000;
+    text-decoration: none;
+}
+.normal_interview_box_3{
+    background: white;
+    height: 270px;
+    margin: 5% 10% 5% 5% ;
+    color: #000;
+    text-decoration: none;
+}
+
+footer{
+    box-sizing: border-box;
+}
+
+footer h3{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page_move{
+    text-decoration: none;
+text-align: center;
+list-style: none;
+border-style: none;
+}
+
+.page_move li {
+    text-decoration: none;
+}
+
+.page_move a{
+    text-decoration:none;
+    color: black;
+}
+
+.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 480px){
+
+.normal_interview_box_1{
+    width: 100%; 
+    height: 270px;
+    /* margin: 5% 5% 5% 10%; */
+    background: white;
+    color: #000;
+    text-decoration: none;
+    }
+
+.interview_box{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 100%;
+}
+
+header{
+    width: 100%; 
+}
+
+.interview_detail_box{
+    height: 100%;
+    border-radius: 30px;
+    background: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.normal_interview_tag{
+    margin-left: 5px;
+}
+
+.normal_interview{
+    border-radius: 20px;
+    background:white;
+}
+
+/* .normal_interview img {
+    box-sizing: inherit;
+} */
+
+.normal_interview_container{
+    display: block;
+    /* max-width: 900px; */
+    width: 100%;
+}
+
+.interview_detail{
+    /* margin-left: auto;
+    margin-right: auto; */
+    background: white;
+    /* margin: 0 5% 0 10%; */
+    /* background-color: cadetblue; */
+    width: 50%;
+    color: #000;
+    text-decoration: none;
+}
+
+.interview_detail_2{
+    /* margin: 0 10% 0 5%; */
+    background-color: white;
+    width: 50%;
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    border: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    height: 70px;
+    width: 100vw;
+}
+
+.normal_interview_box_2{
+    background: white;
+    height: 270px;
+    /* margin: 5% 5% 5% 5% ; */
+    color: #000;
+    text-decoration: none;
+}
+
+
+}
