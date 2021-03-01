@@ -1,0 +1,213 @@
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .breadcrumb li:first-child a:before {
+    /*家アイコン*/
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #2e7fea;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+/*インタビュー記事の処理*/
+@media screen and (min-width:801px){
+    .interview{
+        width:auto;
+        padding-right: 2%;
+        padding-left:3%;
+        /* flex-direction:column; */
+    }
+    .interview-box{
+        display:flex;
+        width: 450px;
+    }
+    .interview-inner{
+        display:block;
+        width: 100%;
+        height:auto;
+    }
+    .interview-inner img{
+        width:100%;
+        height:220px;
+        object-fit:cover; 
+    }
+    .interview-min-title{
+        height:144px;       
+        padding:0;
+        flex-grow: 1;
+    }
+    .view-flex{
+        justify-content:space-between;
+        display:flex;
+
+    }
+    h2{
+        
+    }
+    .sort_flex{
+        display:flex;
+        list-style:none;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+        padding-inline-end: 50%;
+    }
+    
+    }
+@media screen and (max-width: 800px) {
+    .interview{
+        display:block;
+        width:auto;
+        padding-right: 2%;
+        padding-left:2%;
+    }
+    .interview-box{
+        display: block;
+        width:auto;
+    }
+    .interview-inner{
+        display:flex;
+        width: 100%;
+        height:auto;
+    }
+    .interview-inner img{
+        width:150px;
+        height:100px;
+        object-fit: cover; 
+    }
+    .interview-index{
+        height:100px;
+    }
+    .interview-min-title{
+        height:auto;
+    }
+    h2{
+        font-size:13px;
+        margin:0;
+    }
+    .time{
+        font-size:1px;
+    }
+    .sort_flex{
+        display:flex;
+        list-style:none;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+        padding-inline-start: 0;
+    }
+    }
+
+.interview-box a{
+    text-decoration: none;
+    color:#000;
+}
+
+@media screen and (min-width:801px){
+.link-box-1{
+    display:flex;
+    padding-right:2%;
+}
+
+.link-box-2{
+    display:flex;
+    padding-right:2%;
+}
+
+.link-box-3{
+    display:flex;
+}
+}
+
+.view-flex{
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.time{
+    display:flex;
+}
+
+.viewer{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.interview-box :hover{
+    opacity: 0.8; filter: brightness(100%); 
+}
+
+.interview-box { -webkit-transition: all .3s; transition: all .3s;}
+
+
+
+.sort_flex li h1{
+    padding-bottom: 0;
+}
+
+/* .interview-title ul{
+    margin-block-end: px;
+} */
+
+.midasi-interview{
+    font-size: 40px;
+}
+
+.cantclick{
+    pointer-events: none;
+}
+
+.blueline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .blueline ::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background:rgb(31,111,185);
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+ .blueline :hover::after {
+    transform: scale(1, 1);
+  }
