@@ -19,7 +19,12 @@ viewer.push([10]);
 viewer.push([25]);
 viewer.push([9]);
 
-var　time_sort=document.getElementById("time-sort");
+let img_int=new Array();
+img_int.push(["./interview-1.jpg"]);
+img_int.push(["./interview-2.jpg"]);
+img_int.push(["./interview-3.jpg"]);
+
+var time_sort=document.getElementById("time-sort");
 const view_sort=document.getElementById("view-sort");
 
 view_sort.onclick=function(){
@@ -43,6 +48,11 @@ view_sort.onclick=function(){
     let r=viewer[0];
     viewer[1]=d;
 
+    const e =img_int[0];
+    // const s=img_int[1];
+    img_int[0]=img_int[1];
+    img_int[1]=e;
+;
     
 
     for (let i=0;i<=2;i++){
@@ -51,7 +61,7 @@ view_sort.onclick=function(){
         '<div class="interview-box" id="interview-bo">'+
         '<div class="interview-inner">'+
         '<div class="img-display">'+
-            '<img src="./interview-'+(i+1)+'.jpg" alt="インタビュー画像">'+
+            '<img src="'+img_int[i]+'" alt="インタビュー画像">'+
             '</div>'+
             '<div class="interview-index">'+
                 '<div class="interview-min-title">'+
@@ -99,13 +109,17 @@ time_sort.onclick=function(){
     viewer[0]=viewer[1];
     viewer[1]=d;
 
+const e=img_int[0];
+img_int[0]=img_int[1];
+img_int[1]=e;
+
     for (let i=0;i<=2;i++){
         var contents= 
         '<a href="interview-'+(i+1)+'.html" class="link-box-'+(i+1)+'" id="default-article">'+
         '<div class="interview-box" id="interview-bo">'+
         '<div class="interview-inner">'+
         '<div class="img-display">'+
-            '<img src="./interview-'+(i+1)+'.jpg" alt="インタビュー画像">'+
+            '<img src="'+img_int[i]+'" alt="インタビュー画像">'+
             '</div>'+
             '<div class="interview-index">'+
                 '<div class="interview-min-title">'+
@@ -143,7 +157,7 @@ for (let i=0;i<=2;i++){
     '<div class="interview-box" id="interview-box">'+
     '<div class="interview-inner">'+
     '<div class="img-display">'+
-        '<img src="./interview-'+(i+1)+'.jpg" alt="インタビュー画像">'+
+        '<img src="'+img_int[i]+'" alt="インタビュー画像">'+
         '</div>'+
         '<div class="interview-index">'+
             '<div class="interview-min-title">'+
@@ -210,4 +224,4 @@ document.getElementById('interview-box').insertAdjacentHTML('beforeend', content
 //     document.getElementById('interview-box').insertAdjacentHTML('beforeend', contents);
 //     };
 
-
+// ああ
