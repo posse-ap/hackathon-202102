@@ -68,7 +68,7 @@ display: inline-block;
     text-align: center;
     height: auto;
     padding-right: 90px;
-    /* margin-left: -20px; */
+    margin-left: 20px;
 
 }
 
@@ -111,11 +111,13 @@ a{
         cursor: pointer;
         padding-right: 0;
         margin-left: 20%;
+        margin-bottom:25px;
         /* padding-right: 50px; */
       }
       .search_container input[type="text"]{
         border: none;
         height: 2.0em;
+        /* padding-bottom:10px; */
       }
       .search_container input[type="text"]:focus {
         outline: 0;
